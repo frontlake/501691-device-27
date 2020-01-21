@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Владимир Озерский](https://up.htmlacademy.ru/htmlcss/27/user/501691).
-* Наставник: `Неизвестно`.
+- Студент: [Владимир Озерский](https://up.htmlacademy.ru/htmlcss/27/user/501691).
+- Наставник: [Дмитрий Мирошниченко](https://htmlacademy.ru/profile/id591417).
 
 ---
 
