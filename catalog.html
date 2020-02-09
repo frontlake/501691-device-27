@@ -86,14 +86,118 @@
       <section class="store">
         <h2 class="section-heading visually-hidden">Выберите монопод</h2>
         <div class="filters">
-          <h3>Фильтр:</h3>
-          <form class="filters" action method="GET">
-            <!-- здесь будет форма -->
+          <span>Фильтр:</span>
+          <form
+            class="form-filter"
+            action="https://echo.htmlacademy.ru"
+            method="GET"
+          >
+            <fieldset class="form-filter__group">
+              <legend>Стоимость</legend>
+
+              <div class="range-slider">
+                <input type="number" value="0" name="min" />
+                <input type="number" value="0" name="max" />
+
+                <div class="range-pins">
+                  <div class="range-pins__pin range-pins__pin--min"></div>
+                  <div class="range-pins__pin range-pins__pin--max"></div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-filter__group">
+              <legend>Цвет</legend>
+
+              <p>
+                <input
+                  class="form-filter__input visually-hidden"
+                  id="colorBlack"
+                  type="checkbox"
+                  name="black"
+                  checked
+                />
+                <label class="form-filter__label" for="colorBlack"
+                  >Черный</label
+                >
+              </p>
+
+              <p>
+                <input
+                  class="form-filter__input visually-hidden"
+                  id="colorWhite"
+                  type="checkbox"
+                  name="white"
+                />
+                <label class="form-filter__label" for="colorWhite">Белый</label>
+              </p>
+
+              <p>
+                <input
+                  class="form-filter__input visually-hidden"
+                  id="colorBlue"
+                  type="checkbox"
+                  name="blue"
+                  checked
+                />
+                <label class="form-filter__label" for="colorBlue">Синий</label>
+              </p>
+
+              <p>
+                <input
+                  class="form-filter__input visually-hidden"
+                  id="colorRed"
+                  type="checkbox"
+                  name="red"
+                  checked
+                />
+                <label class="form-filter__label" for="colorRed">Красный</label>
+              </p>
+
+              <p>
+                <input
+                  class="form-filter__input visually-hidden"
+                  id="colorPink"
+                  type="checkbox"
+                  name="pink"
+                />
+                <label class="form-filter__label" for="colorPink"
+                  >Розовый</label
+                >
+              </p>
+            </fieldset>
+
+            <fieldset class="form-filter__group">
+              <legend>Bluetooth</legend>
+              <p>
+                <input
+                  class="form-filter__input visually-hidden"
+                  id="bluetooth-true"
+                  type="radio"
+                  name="bluetooth"
+                  checked
+                />
+                <label class="form-filter__label" for="bluetooth-true"
+                  >Есть</label
+                >
+              </p>
+              <p>
+                <input
+                  class="form-filter__input visually-hidden"
+                  id="bluetooth-false"
+                  type="radio"
+                  name="bluetooth"
+                />
+                <label class="form-filter__label" for="bluetooth-false"
+                  >Нет</label
+                >
+              </p>
+            </fieldset>
+            <button class="btn" type="submit">Показать</button>
           </form>
         </div>
 
         <div class="sorting">
-          <h3>Сортировка:</h3>
+          <span>Сортировка:</span>
           <ul class="sorting-list">
             <li class="sorting-list__item">
               <a href="#">По цене:</a>
