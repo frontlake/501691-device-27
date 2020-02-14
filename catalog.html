@@ -32,54 +32,83 @@
             name="siteSearch"
             type="text"
             placeholder="Поиск по сайту"
+            required
           />
           <button class="form-search__button" type="submit">Найти</button>
         </form>
 
         <ul class="user-menu">
           <li class="user-menu__item">
-            <a href="#">Валентин Петухов</a>
+            <a class="user-menu__link" href="#">Валентин Петухов</a>
           </li>
           <li class="user-menu__item">
-            <button type="button">Выйти</button>
+            <a class="user-menu__link user-menu__link--logout" href="#"
+              >Выйти</a
+            >
           </li>
           <li class="user-menu__item">
-            <a href="#">Сравнить</a>
+            <a class="user-menu__link" href="#">Сравнить</a>
           </li>
           <li class="user-menu__item">
-            <a href="#">Корзина</a>
+            <a class="user-menu__link" href="#">Корзина</a>
           </li>
         </ul>
 
         <nav class="main-navigation">
           <ul class="navigation-list">
             <li class="navigation-list__item">
-              <a href="#">Каталог товаров</a>
+              <a
+                class="navigation-list__link navigation-list__link--uppercase"
+                href="#"
+                >Каталог товаров</a
+              >
 
               <ul class="navigation-list__submenu">
                 <li class="navigation-list__submenu-item">
-                  <a href="#">Виртуальная реальность</a>
+                  <a class="navigation-list__link" href="#"
+                    >Виртуальная реальность</a
+                  >
                 </li>
                 <li class="navigation-list__submenu-item">
-                  <a href="#">Моноподы для селфи</a>
+                  <a class="navigation-list__link" href="catalog.html"
+                    >Моноподы для селфи</a
+                  >
                 </li>
                 <li class="navigation-list__submenu-item">
-                  <a href="#">Экшн-камеры</a>
+                  <a class="navigation-list__link" href="#">Экшн-камеры</a>
                 </li>
                 <li class="navigation-list__submenu-item">
-                  <a href="#">Фитнес-браслеты</a>
+                  <a class="navigation-list__link" href="#">Фитнес-браслеты</a>
                 </li>
                 <li class="navigation-list__submenu-item">
-                  <a href="#">Умные часы</a>
+                  <a class="navigation-list__link" href="#">Умные часы</a>
                 </li>
                 <li class="navigation-list__submenu-item">
-                  <a href="#">Квадрокоптеры</a>
+                  <a class="navigation-list__link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
             </li>
-            <li class="navigation-list__item"><a href="#">Доставка</a></li>
-            <li class="navigation-list__item"><a href="#">Гарантия</a></li>
-            <li class="navigation-list__item"><a href="#">Контакты</a></li>
+            <li class="navigation-list__item">
+              <a
+                class="navigation-list__link navigation-list__link--uppercase"
+                href="#"
+                >Доставка</a
+              >
+            </li>
+            <li class="navigation-list__item">
+              <a
+                class="navigation-list__link navigation-list__link--uppercase"
+                href="#"
+                >Гарантия</a
+              >
+            </li>
+            <li class="navigation-list__item">
+              <a
+                class="navigation-list__link navigation-list__link--uppercase"
+                href="#"
+                >Контакты</a
+              >
+            </li>
           </ul>
         </nav>
       </div>

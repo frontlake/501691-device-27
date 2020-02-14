@@ -73,3 +73,89 @@ body {
   font-weight: 700;
   line-height: 1.02;
 }
+
+/**************** Base *****************/
+.site-header {
+  background-color: #f7e296;
+}
+
+.form-search__label {
+  opacity: 0.3;
+  transition: opacity 0.1s linear;
+}
+
+.form-search__label:hover {
+  opacity: 0.6;
+}
+
+.form-search__input {
+  font: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+.form-search__input:focus ~ .form-search__button,
+.form-search__input:valid ~ .form-search__button {
+  visibility: visible;
+}
+
+.form-search__button {
+  visibility: hidden;
+  font: inherit;
+  border: 2px solid #000000;
+  background-color: transparent;
+  color: #000000;
+  transition: color, background-color 0.1s linear;
+}
+
+.form-search__button:hover,
+.form-search__button:focus {
+  color: #ffffff;
+  background-color: #000000;
+  outline: none;
+}
+
+.form-search__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-menu,
+.navigation-list,
+.navigation-list__submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-menu__link,
+.navigation-list__link {
+  font: inherit;
+  color: #000000;
+  text-decoration: none;
+  transition: opacity 0.1s linear;
+}
+
+.navigation-list__link--uppercase {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+
+.user-menu__link:hover,
+.user-menu__link:focus,
+.navigation-list__link:hover,
+.navigation-list__link:focus {
+  opacity: 0.6;
+}
+
+.user-menu__link:active,
+.navigation-list__link:active {
+  opacity: 0.3;
+}
+
+.user-menu__link--logout {
+  opacity: 0.3;
+}
