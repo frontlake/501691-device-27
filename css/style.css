@@ -294,3 +294,32 @@ body {
 .developed:active {
   opacity: 0.3;
 }
+
+/*****************************************/
+/************* Catalog.html **************/
+/*****************************************/
+
+/************* Breadcrumbs ***************/
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs__link {
+  font: inherit;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.3;
+  color: #000000;
+  transition: opacity 0.1s linear;
+}
+
+.breadcrumbs__link:hover,
+.breadcrumbs__link:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs__link:active {
+  opacity: 0.1;
+}
