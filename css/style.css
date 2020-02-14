@@ -159,3 +159,16 @@ body {
 .user-menu__link--logout {
   opacity: 0.3;
 }
+
+/**************** About *****************/
+.transporters-list {
+  margin: 0;
+  list-style: none;
+}
+
+.transporters-list__item {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2.5;
+}
