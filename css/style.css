@@ -214,3 +214,83 @@ body {
   font-weight: 700;
   line-height: 2.5;
 }
+
+/**************** Footer *****************/
+.site-footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.user-menu--inversed .user-menu__link {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.user-menu--inversed .user-menu__link:hover,
+.user-menu--inversed .user-menu__link:focus {
+  opacity: 1;
+}
+
+.user-menu--inversed .user-menu__link:active {
+  opacity: 0.3;
+}
+
+.user-menu--inversed .user-menu__link--logout {
+  opacity: 1;
+}
+
+.user-menu--inversed .user-menu__link--logout:hover,
+.user-menu--inversed .user-menu__link--logout:focus {
+  opacity: 0.7;
+}
+
+.user-menu--inversed .user-menu__link--logout:active {
+  opacity: 0.3;
+}
+
+.address {
+  font-style: normal;
+}
+
+.navigation-list--footer-menu .navigation-list__link {
+  color: #ffffff;
+}
+
+.phone-number {
+  font: inherit;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.phone-number:hover,
+.phone-number:focus {
+  opacity: 0.6;
+}
+
+.phone-number:active {
+  opacity: 0.3;
+}
+
+.social-icons-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons-list__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.developed {
+  transition: opacity 0.1s linear;
+}
+
+.developed:hover,
+.developed:focus {
+  opacity: 0.7;
+}
+
+.developed:active {
+  opacity: 0.3;
+}
