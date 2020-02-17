@@ -79,6 +79,11 @@ body {
   line-height: 1.02;
 }
 
+.section-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn {
   position: relative;
   display: inline-block;
