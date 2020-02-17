@@ -122,7 +122,19 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/**************** Base *****************/
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/**************** Header *****************/
 .site-header {
   padding-top: 40px;
   background-color: #f7e296;
@@ -332,11 +344,31 @@ body {
 /************* Catalog.html **************/
 /*****************************************/
 
+.main-content.container {
+  padding: 0;
+}
+
+.main-content .heading {
+  padding-left: 60px;
+  margin-bottom: 10px;
+}
+
 /************* Breadcrumbs ***************/
 .breadcrumbs {
   margin: 0;
+  margin-bottom: 50px;
   padding: 0;
+  padding-left: 60px;
   list-style: none;
+  display: flex;
+}
+
+.breadcrumbs__item {
+  margin-right: 40px;
+}
+
+.breadcrumbs__item:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs__link {
@@ -357,6 +389,16 @@ body {
   opacity: 0.1;
 }
 
+/************* Store section ***************/
+.store {
+  display: flex;
+  justify-content: space-between;
+}
+
+.store__wrapper {
+  width: 760px;
+}
+
 /*************** Filters *****************/
 .form-filter {
   position: relative;
@@ -364,11 +406,17 @@ body {
 }
 
 .filters {
+  width: 327px;
   background-color: #ebebeb;
+  text-align: center;
 }
 
 .form-filter__group {
   border: none;
+}
+
+.form-filter__list {
+  text-align: left;
 }
 
 .form-filter__group legend {
@@ -387,7 +435,31 @@ body {
   color: #000000;
 }
 
+/********** Store items list ***********/
+.store-items-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 /*************** Card *****************/
+.card {
+  margin-bottom: 30px;
+}
+
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card__heading {
+  flex-basis: 253px;
+}
+
 .card__link {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -403,6 +475,12 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card__compare-link {
