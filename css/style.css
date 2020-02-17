@@ -55,6 +55,12 @@ body {
   color: #000000;
 }
 
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
 .paragraph {
   color: #464646;
 }
@@ -118,7 +124,18 @@ body {
 
 /**************** Base *****************/
 .site-header {
+  padding-top: 40px;
   background-color: #f7e296;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form-search {
+  width: 441px;
 }
 
 .form-search__label {
@@ -131,6 +148,7 @@ body {
 }
 
 .form-search__input {
+  width: 327px;
   font: inherit;
   border: none;
   background-color: transparent;
@@ -161,12 +179,27 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.user-menu {
+  flex-basis: 500px;
+}
+
 .user-menu,
 .navigation-list,
 .navigation-list__submenu {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-list__submenu {
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.navigation-list__group {
+  margin-right: 60px;
 }
 
 .user-menu__link,
